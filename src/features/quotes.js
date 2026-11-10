@@ -10,6 +10,11 @@
     true,
   );
 
+  function findHistory(el) {
+    const key = Object.keys(el).find((k) => k.startsWith("__reactFiber$"));
+    for (let fiber = el[key]; fiber; fiber = fiber.return) if (typeof fiber.memoizedProps?.history?.push === "function") return fiber.memoizedProps.history;
+  }
+
   function addViewQuotes() {
     if (!status || !document.documentElement.classList.contains("fixer-viewQuotes")) return;
     const quote = document.querySelector('[role="menu"] a[role="menuitem"][href="/compose/post"]');
@@ -31,8 +36,7 @@
     item.addEventListener("click", (e) => {
       if (e.metaKey || e.ctrlKey || e.shiftKey) return;
       e.preventDefault();
-      history.pushState({}, "", item.getAttribute("href"));
-      dispatchEvent(new PopStateEvent("popstate", { state: history.state }));
+      findHistory(item.parentElement)?.push(item.getAttribute("href"));
     });
     quote.after(item);
   }
