@@ -1,0 +1,7 @@
+:root:not(.fixer-downloadVideos) [data-fixer-download] {
+  display: none;
+}
+
+[data-fixer-download] button:hover {
+  background-color: color-mix(in srgb, var(--fixer-fg) 10%, transparent) !important;
+}

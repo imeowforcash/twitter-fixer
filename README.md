@@ -15,3 +15,5 @@ This is an extension for Twitter (X) that fixes some of the annoyances I've had 
 - Show View quotes in the repost menu
 - Stop the right area from scrolling with the timeline
 - Remove blur from the header
+- Use default context menu for post media
+- Add a download button to video's miniplayer

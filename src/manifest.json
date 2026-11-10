@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Twitter Fixer",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtkwKvRsIYcfMBy1Oq/LRHf8ypeLVvszmczSw6kwUXittxms1A0bD4/sczYbb/u3qJGIlzeof287y48aIjUCWl9M51OOs72lDuPq5cANx5PDFVITg9XQJ0RqRGYaMhQoosb83rCIf0lNxT5FT/fell6kunYtPrM9VJ7QfIpDk3/vExUsBALXltdOw//8wghdqbbaADeXEeR9pmlqS9pdoJD+mLLPta2Yy0/eq6U+Lcwd2NdLS867k04OhpcynUnJypy9NmJYZhvBzSL0h8jDXf0OzvK+qXUEtwqm9m+z67biac0R2guZ7GPAG67AH9GZyHeYe01aE/Y5J5MPhBOSolQIDAQAB",
   "icons": {
     "16": "icons/16.png",
@@ -10,8 +10,12 @@
     "128": "icons/128.png"
   },
   "permissions": [
-    "storage"
+    "storage",
+    "downloads"
   ],
+  "background": {
+    "service_worker": "background.js"
+  },
   "content_scripts": [
     {
       "matches": [
@@ -25,7 +29,8 @@
         "features/align.css",
         "features/quotes.css",
         "features/pin.css",
-        "features/header.css"
+        "features/header.css",
+        "features/download.css"
       ],
       "js": [
         "icons.js",
@@ -35,7 +40,8 @@
         "features/hide.js",
         "features/align.js",
         "features/header.js",
-        "features/menu.js"
+        "features/menu.js",
+        "features/save.js"
       ],
       "run_at": "document_start"
     },
@@ -47,7 +53,8 @@
       "js": [
         "sidebar/unselect.js",
         "features/all.js",
-        "features/quotes.js"
+        "features/quotes.js",
+        "features/download.js"
       ],
       "run_at": "document_start",
       "world": "MAIN"

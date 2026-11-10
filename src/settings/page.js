@@ -12,6 +12,7 @@ const options = [
   { key: "pinRightArea", label: "Stop the right area from scrolling with the timeline" },
   { key: "solidHeader", label: "Remove blur from the header" },
   { key: "defaultMenu", label: "Use default context menu for post media" },
+  { key: "downloadVideos", label: "Add a download button to video's miniplayer" },
 ];
 
 for (const { key, label } of options) {

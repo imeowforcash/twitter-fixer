@@ -8,6 +8,7 @@ const settings = {
   pinRightArea: true,
   solidHeader: false,
   defaultMenu: false,
+  downloadVideos: true,
 };
 
 function apply() {
