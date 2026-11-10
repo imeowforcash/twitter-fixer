@@ -32,3 +32,10 @@ function drawIcon(svg, name) {
   svg.setAttribute("stroke-linejoin", "round");
   svg.innerHTML = icons[name];
 }
+
+new MutationObserver(() => {
+  for (const svg of document.querySelectorAll("svg[data-fixer-icon]")) {
+    drawIcon(svg, svg.dataset.fixerIcon);
+    delete svg.dataset.fixerIcon;
+  }
+}).observe(document.documentElement, { childList: true, subtree: true });

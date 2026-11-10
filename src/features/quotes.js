@@ -25,7 +25,7 @@
     item.dataset.fixerQuotes = "";
     item.setAttribute("href", status + "/quotes");
 
-    drawIcon(item.querySelector("svg"), "textAlignStart");
+    item.querySelector("svg").dataset.fixerIcon = "textAlignStart";
     item.querySelector("span").textContent = "View quotes";
 
     item.addEventListener("click", (e) => {

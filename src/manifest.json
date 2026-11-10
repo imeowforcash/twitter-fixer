@@ -44,7 +44,6 @@
         "https://twitter.com/*"
       ],
       "js": [
-        "icons.js",
         "sidebar/unselect.js",
         "features/all.js",
         "features/quotes.js"
