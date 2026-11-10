@@ -7,6 +7,7 @@ const settings = {
   viewQuotes: true,
   pinRightArea: true,
   solidHeader: false,
+  defaultMenu: false,
 };
 
 function apply() {

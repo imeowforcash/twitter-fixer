@@ -34,7 +34,8 @@
         "sidebar/button.js",
         "features/hide.js",
         "features/align.js",
-        "features/header.js"
+        "features/header.js",
+        "features/menu.js"
       ],
       "run_at": "document_start"
     },

@@ -11,6 +11,7 @@ const options = [
   { key: "viewQuotes", label: "Show View quotes in the repost menu" },
   { key: "pinRightArea", label: "Stop the right area from scrolling with the timeline" },
   { key: "solidHeader", label: "Remove blur from the header" },
+  { key: "defaultMenu", label: "Use default context menu for post media" },
 ];
 
 for (const { key, label } of options) {
