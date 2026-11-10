@@ -1,0 +1,15 @@
+.fixer-hideDrawers [data-testid="GrokDrawer"],
+.fixer-hideDrawers [data-testid="chat-drawer-main"] {
+  display: none !important;
+}
+
+.fixer-hidePremium [data-testid="premium-signup-tab"],
+.fixer-hidePremium [data-fixer="premium"] {
+  display: none !important;
+}
+
+.fixer-hideGrokButtons nav a[href="/i/grok"],
+.fixer-hideGrokButtons [data-testid="GrokDrawer"],
+.fixer-hideGrokButtons [data-fixer="grok"] {
+  display: none !important;
+}

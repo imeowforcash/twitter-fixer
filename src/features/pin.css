@@ -1,0 +1,9 @@
+.fixer-pinRightArea [data-testid="sidebarColumn"] > div > div:first-child:not(:last-child) {
+  margin-top: 0 !important;
+}
+
+.fixer-pinRightArea [data-testid="sidebarColumn"] > div > div:last-child {
+  top: 0 !important;
+  max-height: 100vh;
+  overflow-y: auto;
+}

@@ -1,0 +1,8 @@
+.fixer-solidHeader [data-testid="primaryColumn"] > div > div:first-child {
+  background-color: var(--fixer-page-bg) !important;
+}
+
+.fixer-solidHeader .fixer-header {
+  background: var(--fixer-bg);
+  backdrop-filter: none;
+}

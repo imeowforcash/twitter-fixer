@@ -1,0 +1,19 @@
+[data-testid="fixer-button"]:hover > div {
+  background-color: color-mix(in srgb, var(--fixer-fg) 10%, transparent);
+}
+
+.fixer-tight [data-testid="premium-signup-tab"] {
+  display: none !important;
+}
+
+.fixer-open [data-testid="fixer-button"] span {
+  font-weight: 700;
+}
+
+.fixer-open nav[aria-label="Primary"] > a div[dir="ltr"] {
+  font-weight: 400 !important;
+}
+
+.fixer-open [data-testid="fixer-button"] svg {
+  fill: currentColor !important;
+}

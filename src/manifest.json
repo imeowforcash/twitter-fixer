@@ -1,0 +1,56 @@
+{
+  "manifest_version": 3,
+  "name": "Twitter Fixer",
+  "version": "0.1.0",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtkwKvRsIYcfMBy1Oq/LRHf8ypeLVvszmczSw6kwUXittxms1A0bD4/sczYbb/u3qJGIlzeof287y48aIjUCWl9M51OOs72lDuPq5cANx5PDFVITg9XQJ0RqRGYaMhQoosb83rCIf0lNxT5FT/fell6kunYtPrM9VJ7QfIpDk3/vExUsBALXltdOw//8wghdqbbaADeXEeR9pmlqS9pdoJD+mLLPta2Yy0/eq6U+Lcwd2NdLS867k04OhpcynUnJypy9NmJYZhvBzSL0h8jDXf0OzvK+qXUEtwqm9m+z67biac0R2guZ7GPAG67AH9GZyHeYe01aE/Y5J5MPhBOSolQIDAQAB",
+  "icons": {
+    "16": "icons/16.png",
+    "32": "icons/32.png",
+    "48": "icons/48.png",
+    "128": "icons/128.png"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://x.com/*",
+        "https://twitter.com/*"
+      ],
+      "css": [
+        "features/hide.css",
+        "sidebar/button.css",
+        "settings/page.css",
+        "features/align.css",
+        "features/quotes.css",
+        "features/pin.css",
+        "features/header.css"
+      ],
+      "js": [
+        "icons.js",
+        "settings/data.js",
+        "settings/page.js",
+        "sidebar/button.js",
+        "features/hide.js",
+        "features/align.js",
+        "features/header.js"
+      ],
+      "run_at": "document_start"
+    },
+    {
+      "matches": [
+        "https://x.com/*",
+        "https://twitter.com/*"
+      ],
+      "js": [
+        "icons.js",
+        "sidebar/unselect.js",
+        "features/all.js",
+        "features/quotes.js"
+      ],
+      "run_at": "document_start",
+      "world": "MAIN"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+/* fixes alignment for back arrow and title */
+.fixer-fixAlignment [data-testid="app-bar-back"] {
+  translate: var(--fixer-back-shift, 0px);
+}
+
+.fixer-fixAlignment div:has(> [data-testid="app-bar-back"]) {
+  min-width: var(--fixer-indent, 48px) !important;
+}
+
+/* fixes alignment for todays news close button */
+.fixer-fixAlignment [data-testid="sidebarColumn"] h2 button {
+  translate: var(--fixer-close-shift, 0px);
+}
+
+/* fixes alignment for notification icons like likes and reposts */
+.fixer-fixAlignment article[data-testid="notification"] > div > div:first-child:has(> svg) {
+  align-items: center !important;
+}
+
+.fixer-fixAlignment article[data-testid="notification"] > div > div:first-child > svg {
+  translate: var(--fixer-icon-shift, 0px);
+}

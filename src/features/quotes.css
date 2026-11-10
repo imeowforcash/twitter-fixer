@@ -1,0 +1,3 @@
+[data-fixer-quotes]:hover {
+  background-color: color-mix(in srgb, var(--x-fg-primary) 3%, transparent);
+}
