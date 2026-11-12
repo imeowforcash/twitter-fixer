@@ -30,7 +30,8 @@
         "features/quotes.css",
         "features/pin.css",
         "features/header.css",
-        "features/download.css"
+        "features/download.css",
+        "features/block.css"
       ],
       "js": [
         "icons.js",
@@ -54,7 +55,8 @@
         "sidebar/unselect.js",
         "features/all.js",
         "features/quotes.js",
-        "features/download.js"
+        "features/download.js",
+        "features/block.js"
       ],
       "run_at": "document_start",
       "world": "MAIN"

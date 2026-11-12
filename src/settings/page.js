@@ -13,6 +13,7 @@ const options = [
   { key: "solidHeader", label: "Remove blur from the header" },
   { key: "defaultMenu", label: "Use default context menu for post media" },
   { key: "downloadVideos", label: "Add a download button to video's miniplayer" },
+  { key: "blockButton", label: "Add a block button to posts" },
 ];
 
 for (const { key, label } of options) {

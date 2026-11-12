@@ -1,0 +1,11 @@
+:root:not(.fixer-blockButton) [data-fixer-block] {
+  display: none;
+}
+
+[data-fixer-block] button:hover > div {
+  color: var(--x-fg-brand) !important;
+}
+
+[data-fixer-block] button:hover > div > div > div {
+  background-color: color-mix(in srgb, var(--x-fg-brand) 10%, transparent);
+}

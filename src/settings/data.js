@@ -9,6 +9,7 @@ const settings = {
   solidHeader: false,
   defaultMenu: false,
   downloadVideos: true,
+  blockButton: true,
 };
 
 function apply() {
