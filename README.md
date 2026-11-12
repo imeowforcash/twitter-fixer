@@ -6,7 +6,7 @@ This is an extension for Twitter (X) that fixes some of the annoyances I've had 
 3. Go to `chrome://extensions/` and enable Developer Mode.
 4. Click Load Unpacked and upload the unzipped folder.
 5. Go to Twitter and click on Fixer in the sidebar.
-## Features
+## Some of the features
 - Hide Grok and Chat buttons on the bottom right
 - Remove ADs for Premium
 - Remove Grok buttons
